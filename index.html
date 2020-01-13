@@ -26,7 +26,7 @@
         <img src="./assets/img/Logo.png" alt="Logo Central Foods">
         <div class="boxPesquisa">
             <input type="text" class="inputCabecalhoPrincipal" placeholder="O que você está buscando?" />
-            <button class="botaoInputCabecalho"><img src="./assets/img/search.png" alt="Pesquisar"></button>
+            <button class="botaoInputCabecalho"><img src="./assets/img/search.png" alt="Pesquisar" /></button>
         </div>
         <button class="botaoCabecalhoPrincipal"><img class="imgBotaoCabecalho" src="./assets/img/list.png"
                 alt="imagem de uma lista" />Lista de Compras</button>
@@ -70,9 +70,9 @@
     </div>
     <br>
     <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="pontoProximoSlide" onclick="currentSlide(1)"></span>
+        <span class="pontoProximoSlide" onclick="currentSlide(2)"></span>
+        <span class="pontoProximoSlide" onclick="currentSlide(3)"></span>
     </div>
     <section class="containerBox">
         <div class="anuncioContainer">
@@ -92,9 +92,251 @@
             <button class="containerImgBotao">CONFIRA</button>
         </div>
     </section>
+    <section class="maisVendidosSection">
+        <div class="maisVendidos">
+            <h2 class="maisVendidosH1">MAIS VENDIDOS</h2>
+            <nav class="maisVendidosNav">
+                <button class="button button1">BEBIDAS</button>
+                <button class="button button1">ACHOCOLATADOS</button>
+                <button class="button button1">SOBREMESAS</button>
+                <button class="button button1">CONSERVAS</button>
+            </nav>
+        </div>
+        <div class="cardMaisVendidos">
+            <div class="cardProduto">
+                <img class="cardImgProduto" src="./assets/img/ovoMaltine.png" alt="Lata de ovomaltine">
+                <h3 class="cardNomeProduto">Ovomaltine Creme Crocante 660g</h3>
+                <p class="cardPrecoAnterior">R$ 147,39</p>
+                <p class="cardPreco">R$ 99,99</p>
+                <div class="cardQuantidadeProduto">
+                    <div class="quantidadeBox">
+                        <input type="button" class="botaoQuantidade" value='-' onclick="process(-1)" />
+                        <input id="quant" name="quant" class="textoQuantidade" size="1" type="text" value="1"
+                            maxlength="5" />
+                        <input type="button" class="botaoQuantidade" value='+' onclick="process(1)">
+                    </div>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="cardProduto">
+                <img class="cardImgProduto" src="./assets/img/ovoMaltine.png" alt="Lata de ovomaltine">
+                <h3 class="cardNomeProduto">Ovomaltine Creme Crocante 660g</h3>
+                <p class="cardPrecoAnterior">R$ 147,39</p>
+                <p class="cardPreco">R$ 99,99</p>
+                <div class="cardQuantidadeProduto">
+                    <div class="quantidadeBox">
+                        <input type="button" class="botaoQuantidade" value='-' onclick="process(-1)" />
+                        <input id="quant" name="quant" class="textoQuantidade" size="1" type="text" value="1"
+                            maxlength="5" />
+                        <input type="button" class="botaoQuantidade" value='+' onclick="process(1)">
+                    </div>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="cardProduto">
+                <img class="cardImgProduto" src="./assets/img/ovoMaltine.png" alt="Lata de ovomaltine">
+                <h3 class="cardNomeProduto">Ovomaltine Creme Crocante 660g</h3>
+                <p class="cardPrecoAnterior">R$ 147,39</p>
+                <p class="cardPreco">R$ 99,99</p>
+                <div class="cardQuantidadeProduto">
+                    <div class="quantidadeBox">
+                        <input type="button" class="botaoQuantidade" value='-' onclick="process(-1)" />
+                        <input id="quant" name="quant" class="textoQuantidade" size="1" type="text" value="1"
+                            maxlength="5" />
+                        <input type="button" class="botaoQuantidade" value='+' onclick="process(1)">
+                    </div>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="cardProduto">
+                <img class="cardImgProduto" src="./assets/img/ovoMaltine.png" alt="Lata de ovomaltine">
+                <h3 class="cardNomeProduto">Ovomaltine Creme Crocante 660g</h3>
+                <p class="cardPrecoAnterior">R$ 147,39</p>
+                <p class="cardPreco">R$ 99,99</p>
+                <div class="cardQuantidadeProduto">
+                    <div class="quantidadeBox">
+                        <input type="button" class="botaoQuantidade" value='-' onclick="process(-1)" />
+                        <input id="quant" name="quant" class="textoQuantidade" size="1" type="text" value="1"
+                            maxlength="5" />
+                        <input type="button" class="botaoQuantidade" value='+' onclick="process(1)">
+                    </div>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="segundoBannerBox">
+        <div class="bannerDivTamanho">
+            <img class="bannerImagem" src="./assets/img/banner1.png" alt="Legumes frescos">
+            <button class="imgBotaoBanner">VEJA MAIS</button>
+        </div>
+        <div class="bannerDivTamanho">
+            <img class="bannerImagem" src="./assets/img/banner2.png" alt="Verduras frescas">
+            <button class="imgBotaoBanner">VEJA MAIS</button>
+        </div>
+    </div>
+    <section class="maisVendidosSection">
+        <div class="maisVendidos">
+            <h2 class="maisVendidosH1">LANÇAMENTOS</h2>
+            <nav class="maisVendidosNav">
+                <button class="button button1">BEBIDAS</button>
+                <button class="button button1">ACHOCOLATADOS</button>
+                <button class="button button1">SOBREMESAS</button>
+                <button class="button button1">CONSERVAS</button>
+            </nav>
+        </div>
+        <div class="cardMaisVendidos">
+            <div class="cardProduto">
+                <img class="cardImgProduto" src="./assets/img/ovoMaltine.png" alt="Lata de ovomaltine">
+                <h3 class="cardNomeProduto">Ovomaltine Creme Crocante 660g</h3>
+                <p class="cardPrecoAnterior">R$ 147,39</p>
+                <p class="cardPreco">R$ 99,99</p>
+                <div class="cardQuantidadeProduto">
+                    <div class="quantidadeBox">
+                        <input type="button" class="botaoQuantidade" value='-' onclick="process(-1)" />
+                        <input id="quant" name="quant" class="textoQuantidade" size="1" type="text" value="1"
+                            maxlength="5" />
+                        <input type="button" class="botaoQuantidade" value='+' onclick="process(1)">
+                    </div>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="cardProduto">
+                <img class="cardImgProduto" src="./assets/img/ovoMaltine.png" alt="Lata de ovomaltine">
+                <h3 class="cardNomeProduto">Ovomaltine Creme Crocante 660g</h3>
+                <p class="cardPrecoAnterior">R$ 147,39</p>
+                <p class="cardPreco">R$ 99,99</p>
+                <div class="cardQuantidadeProduto">
+                    <div class="quantidadeBox">
+                        <input type="button" class="botaoQuantidade" value='-' onclick="process(-1)" />
+                        <input id="quant" name="quant" class="textoQuantidade" size="1" type="text" value="1"
+                            maxlength="5" />
+                        <input type="button" class="botaoQuantidade" value='+' onclick="process(1)">
+                    </div>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="cardProduto">
+                <img class="cardImgProduto" src="./assets/img/ovoMaltine.png" alt="Lata de ovomaltine">
+                <h3 class="cardNomeProduto">Ovomaltine Creme Crocante 660g</h3>
+                <p class="cardPrecoAnterior">R$ 147,39</p>
+                <p class="cardPreco">R$ 99,99</p>
+                <div class="cardQuantidadeProduto">
+                    <div class="quantidadeBox">
+                        <input type="button" class="botaoQuantidade" value='-' onclick="process(-1)" />
+                        <input id="quant" name="quant" class="textoQuantidade" size="1" type="text" value="1"
+                            maxlength="5" />
+                        <input type="button" class="botaoQuantidade" value='+' onclick="process(1)">
+                    </div>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="cardProduto">
+                <img class="cardImgProduto" src="./assets/img/ovoMaltine.png" alt="Lata de ovomaltine">
+                <h3 class="cardNomeProduto">Ovomaltine Creme Crocante 660g</h3>
+                <p class="cardPrecoAnterior">R$ 147,39</p>
+                <p class="cardPreco">R$ 99,99</p>
+                <div class="cardQuantidadeProduto">
+                    <div class="quantidadeBox">
+                        <input type="button" class="botaoQuantidade" value='-' onclick="process(-1)" />
+                        <input id="quant" name="quant" class="textoQuantidade" size="1" type="text" value="1"
+                            maxlength="5" />
+                        <input type="button" class="botaoQuantidade" value='+' onclick="process(1)">
+                    </div>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="instagramCentralHH">
+        <h2 class="instagramCentral">NOS SIGA NO INSTAGRAM</h2>
+        <H3 class="instagramCentral">@CENTRALFOODSSP</H3>
+    </div>
+    <div>
+        <img class="imgInstagram" src="./assets/img/CapturaTela1.png" alt="">
+        <img class="imgInstagram" src="./assets/img/CapturaTela2.png" alt="">
+        <img class="imgInstagram" src="./assets/img/CapturaTela3.png" alt="">
+        <img class="imgInstagram" src="./assets/img/CapturaTela4.png" alt="">
+        <img class="imgInstagram" src="./assets/img/CapturaTela5.png" alt="">
+        <img class="imgInstagram" src="./assets/img/CapturaTela6.png" alt="">
+    </div>
 
+    <div class="sobreNosCentral">
+        <h2 class="sobreNosCentralH2">SOBRE A CENTRAL FOODS</h2>
+        <p class="sobreNosCentralP">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+            eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+    </div>
 
-
+    <footer>
+        <div class="footerBox">
+            <div class="conhecaCentralFoods">
+                <a class="tituloNavFooter" href="#">CONHEÇA A CENTRAL FOODS</a>
+                <a class="opcaoNavFooter" href="#">CONHEÇA A CENTRAL FOODS</a>
+                <a class="opcaoNavFooter" href="#">COMO COMPRAR</a>
+                <a class="opcaoNavFooter" href="#">INDICAÇÃO E DESCONTO</a>
+                <a class="opcaoNavFooter" href="#">BLOG CENTRAL FOODS</a>
+                <div class="footerIcones">
+                    <img class="iconeRedes" src="./assets/img/logoinstagram.png" alt="">
+                    <img class="iconeRedes" src="./assets/img/logoLinkedIn.png" alt="">
+                    <img class="iconeRedes" src="./assets/img/logoFacebook.png" alt="">
+                    <img class="iconeRedes" src="./assets/img/logoYoutube.png" alt="">
+                </div>
+            </div>
+            <div class="conhecaCentralFoods">
+                <a class="tituloNavFooter" href="#">INFORMAÇOES ÚTEIS</a>
+                <a class="opcaoNavFooter" href="#">FALE CONOSCO</a>
+                <a class="opcaoNavFooter" href="#">DÚVIDAS</a>
+                <a class="opcaoNavFooter" href="#">PRAZOS DE ENTREGA</a>
+                <a class="opcaoNavFooter" href="#">FORMAS DE PAGAMENTO</a>
+                <a class="opcaoNavFooter" href="#">POLÍTICA DE PRIVACIDADE</a>
+                <a class="opcaoNavFooter" href="#">TROCAS E DEVOLUÇÕES</a>
+            </div>
+            <div class="conhecaCentralFoods">
+                <a class="tituloNavFooter" href="#">FORMAS DE PAGAMENTO</a>
+                <div class="imgFormaPagamento">
+                    <img src="./assets/img/pagamento1.png" alt="Logo cartão visa">
+                    <img src="./assets/img/pagamento2.png" alt="Logo cartão master card">
+                    <img src="./assets/img/pagamento3.png" alt="Logo cartão elo">
+                </div>
+                <div class="imgFormaPagamento">
+                    <img src="./assets/img/pagamento4.png" alt="Logo cartão dinners club">
+                    <img src="./assets/img/pagamento5.png" alt="Logo boleto bancário">
+                    <img src="./assets/img/pagamento6.png" alt="Logo cartão american express">
+                </div>
+            </div>
+            <div class="footerCadastro">
+                <h3 class="cadastroPrimeiroItem">CADASTRE-SE E RECEBA NOSSAS</h3>
+                <h3 class="cadastroSegundoItem">NOVIDADES E PROMOÇÕES</h3>
+                <h4 class="cadastroTerceiroItem">Excepteur sint occaecat cudatat non ent, sunt in culpa qui officia
+                    lorem ipsum</h4>
+                <div class="">
+                    <input type="text" class="inputFooter" placeholder="SEU E-MAIL" />
+                    <button class="botaoInputFooter">OK</button>
+                </div>
+            </div>
+        </div>
+        <div class="footerCopyright">
+                <p class="footerCopyrightParag">Copyright © 2019. Todos os direitos reservados. Todas as marcas e suas
+                    imagens são de propriedade de seus
+                    respectivos donos.
+                    É vedada a reprodução, total ou parcial, de qualquer conteúdo sem expressa autorização.</p>
+                <img class="copyrightImg" src="./assets/img/logoEconverse.png" alt="Logo Econverse">
+                <img class="copyrightImg" src="./assets/img/logoVTEX.png" alt="Logo vtex">
+            
+        </div>
+        
+    </footer>
 </body>
 
 </html>

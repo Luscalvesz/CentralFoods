@@ -1,12 +1,11 @@
+//carrossel
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -25,4 +24,14 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+// botão quantidade de produtos
+function process(quant){
+  var value = parseInt(document.getElementById("quant").value);
+  value+=quant;
+  if(value < 1){
+    document.getElementById("quant").value = 1;
+  }else{
+  document.getElementById("quant").value = value;
+  }
 }
