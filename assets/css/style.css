@@ -115,18 +115,22 @@
 .bannerPrincipal{
     width: 100%;
 }
-
-.mySlides {
+.prim{
+    display: block;
+}
+.sec{
     display: none;
 }
-
-/* Slideshow container */
+.mySlides {
+    width: 100%;
+}
+.mySlides img{
+    width: 100%;
+}
 .slideshow-container {
   position: relative;
   margin: auto;
 }
-
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -141,20 +145,13 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
-
-/* The dots/bullets/indicators */
 .pontoProximoSlide {
   cursor: pointer;
   height: 15px;
@@ -165,7 +162,6 @@
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active, .pontoProximoSlide:hover {
   background-color: #717171;
 }
@@ -175,12 +171,10 @@
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
@@ -230,11 +224,9 @@
     margin-top: 30px;
     
 }
-
 .maisVendidosNav{
     margin-right: 10px;
 }
-
 .maisVendidosH1{
     color: #009B7B;
     margin-right: 60px;
@@ -260,19 +252,16 @@
     height: 35px;
     margin: 0 -3px;
 }
-  
 .button1 {
     background-color: white; 
     color: #9D9D9D; 
     border: none;
     border-bottom: 2px solid #9D9D9D
 }
-  
 .button1:hover {
     border-bottom: 2px solid #009B7B;
     color: #009B7B;   
-}
-  
+} 
 .cardMaisVendidos {
     display: flex;
     justify-content: space-around;
@@ -280,7 +269,6 @@
     margin: 30px 175px;
 
 }
-  
 .cardMaisVendidos button {
     margin-left: 10px;
     padding: 0 30px;
@@ -292,7 +280,6 @@
     font-size: 18px;
     border-radius: 5px;
 }
-  
 .cardMaisVendidos button:hover {
     background-color: #006953;
 }
@@ -300,9 +287,6 @@
     font-size: 14px;
     width: 125px;
     text-align: center;
-}
-.cardPreco{
-
 }
 .cardPrecoAnterior{
     text-decoration: line-through;
@@ -356,7 +340,6 @@
     width: 490px;
     margin: 0 8px;
 }
-
 .imgBotaoBanner {
     position: relative;
     bottom: 95px;
@@ -382,7 +365,6 @@
 .instagramCentralHH{
     margin: 50px 0;
 }
-
 .sobreNosCentralH2{
     text-align: center;
     color: #006953;
